@@ -11,7 +11,7 @@ OPENVPNCONFIG=/etc/openvpn
 EASYRSAPATH=$OPENVPNCONFIG/easy-rsa
 KEYSPATH="$EASYRSAPATH/keys"
 
-TEMPLATE="client-config-template.conf"
+TEMPLATE="client-config-template"
 OUTPUTDIR=$OPENVPNCONFIG/clientconfig
 
 CRT=".crt"
