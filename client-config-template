@@ -6,6 +6,7 @@ dev tun
 proto tcp
 cipher AES-256-CBC
 auth SHA256
+remote-cert-tls server
 resolv-retry infinite
 nobind
 persist-key
