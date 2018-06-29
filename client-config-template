@@ -1,6 +1,5 @@
 remote <your server DNS address or IP address>
 client
-comp-lzo
 port 443
 dev tun
 proto tcp
