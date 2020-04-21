@@ -26,6 +26,18 @@ then
     exit 1
 fi
 
+if [ -z $TEMPLATE ]
+then
+    echo "Please specify the appropriate template file."
+    exit 1
+fi
+
+if [ ! -e $TEMPLATE ]
+then
+    echo "Specified template file does not exist."
+    exit 1
+fi
+
 if [ -e "$OUTPUTDIR/$NAME$FILEEXT" ]
 then
     echo "File $OUTPUTDIR/$NAME$FILEEXT already exists - please backup and remove it first"
